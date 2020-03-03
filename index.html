@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Album cover</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                <div id="openseadragon1" class="mx-auto" style="width: 700px; height: 700px;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.1/openseadragon.min.js"></script>
+    <script type="text/javascript">
+        var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.1/images/",
+            tileSources: "https://albumcoverart.blob.core.windows.net/albumme/concat_2xdz.dzi",
+            constrainDuringPan: true,
+            visibilityRatio: 1
+        });
+    </script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=PT+Sans|Titillium+Web&display=swap");
+
+        p,
+        td,
+        th,
+        h4,
+        h5,
+        h6 {
+            font-family: "PT Sans", Helvetica, sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Titillium Web", Helvetica, sans-serif;
+        }
+    </style>
+</body>
+
+</html>
